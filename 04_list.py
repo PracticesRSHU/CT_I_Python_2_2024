@@ -132,3 +132,64 @@ print("list2D_deepcopy=",list2D_deepcopy)
 list2D_deepcopy[2][1]=8888
 print("list2D=",list2D)
 print("list2D_deepcopy=",list2D_deepcopy)
+
+x=[45,67,89]
+print(x[1])
+print(x[-2])
+x[1]=76
+print(x[1])
+
+from random import randint  #одна функція   
+from random import *        #всі функції модулі
+
+
+fruits=["apple","plum","Cherry","kiwi"]
+list_number=[randint(1,20) for _ in range(10)]
+print(fruits)
+print(list_number)
+# sorting:
+fruits.sort()
+list_number.sort()
+print("After sotring:")
+print(fruits)
+print(list_number)
+print("After sorting with args")
+fruits.sort(key=str.lower)
+list_number.sort(reverse=True)
+print(fruits)
+print(list_number)
+print(list_number.count(5))
+print(f"len={len(list_number)}")
+print(f"min={min(list_number)}")
+print(f"max={max(list_number)}")
+print(f"sorted={sorted(list_number)}")
+
+list_n=[3,45,21,28,36,47,89] # find number div 3 and 7
+count_n=0
+for number in list_n:
+    if number%3==0 or number%7==0:
+        count_n=count_n+1 #  count_n+=1
+print("count_n=",count_n,sep="")
+
+matrix=[
+    [2,4,5],  #i=0
+    [6,7,8],  #i=1
+    [9,10,11] #i=2 
+]
+print(matrix)
+# by index
+for i in range(len(matrix)):
+    # print(matrix[i])
+    suma=0
+    for j in range(len(matrix[i])):
+        print(matrix[i][j],end=" ")
+        suma+=matrix[i][j]
+    print(suma)
+
+
+
+for row in matrix:
+    # print(row)
+    for col in row:
+        print(col, end=" ")
+    print()
