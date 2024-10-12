@@ -1,0 +1,19 @@
+
+Mode files   ХY :
+X:
+r - читання
+w - запис в існуючий файл
+x - запис у файл
+a - додавання в кінець файлу
+
+Y:
+t - файл текстовий (за замовчуванням)
+b - файл бінарний
+Write to an Existing File
+    To write to an existing file, you must add a parameter to the open() function:
+    "a" - Append - will append to the end of the file
+    "w" - Write - will overwrite any existing content
+Write to an Existing File
+    To write to an existing file, you must add a parameter to the open() function:
+    "a" - Append - will append to the end of the file
+    "w" - Write - will overwrite any existing content
