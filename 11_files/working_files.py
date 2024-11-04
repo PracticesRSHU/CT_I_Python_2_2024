@@ -263,3 +263,4 @@ print(rez)
 #         fileW.write(f"{listInfo[0]} {listInfo[1]} \n")
 
 # print(rez)
+
