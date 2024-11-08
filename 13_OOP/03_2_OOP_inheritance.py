@@ -39,7 +39,10 @@ class Person:
         print(f"Person firstname: {self.__firstname}")
 
 # ==============одиничне наслідування===========
-class Employee(Person):  
+class Employee(Person):
+    """
+    опис класу працівника 
+    """  
     def __init__(self, firstname, salary=0):
         super().__init__(firstname) #виклик конструктура базового класу (суперкласу)
         self.__salary=salary
@@ -106,3 +109,13 @@ working_student1.study()
 
 print(WorkingStudent.__mro__)  #ієрархію послідовності виклику класів
 working_student1.print_info()
+
+# list bases class 
+print(Employee.__base__)
+# dict attr of class
+print(Employee.__dict__)
+print(Employee.__doc__)
+print(Employee.__module__)
+
+print(Employee.__annotations__)
+
