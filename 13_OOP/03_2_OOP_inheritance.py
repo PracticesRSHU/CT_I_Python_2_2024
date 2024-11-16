@@ -80,6 +80,10 @@ class WorkingStudent(Employee, Student):
         self.study()
         self.work()
         print("=============================The End==========================")
+    
+    def display_info(self):
+        super().display_info()
+        print(f"{self.firstname} is sduding in {self.university}.")
 
 
 # ========= using class Person=====================
@@ -119,3 +123,4 @@ print(Employee.__module__)
 
 print(Employee.__annotations__)
 
+working_student1.display_info()
